@@ -177,6 +177,14 @@ main {
     width: 200px;
 }
 
+.footer-feature {
+    background-image: url('../images/footer.png');
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    display: grid;
+    position: relative;
+}
 
 /*  TYPOGRAPHY   */
 
@@ -221,6 +229,7 @@ h3 {
     font-size: 40px;
     font-style: normal;
     height: 50px;
+
 }
 
 .p4 {
@@ -234,4 +243,8 @@ h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
     font-size: 20px;
+}
+
+.more-space {
+    padding-bottom: 150px;
 }
