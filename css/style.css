@@ -116,7 +116,6 @@ main {
 .play-images {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
     grid-gap: 20px;
 }
 
@@ -128,7 +127,7 @@ main {
 
 .options {
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-columns: 1fr minmax(250px, 2fr) minmax(250px, 2fr) 1fr;
     grid-gap: 60px;
     padding: 80px;
     text-align: center;
@@ -265,10 +264,12 @@ h3 {
     }
 
     .play-images {
-        display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-gap: 20px;
     }
 
+    @media screen and (max-width:600px) {
+        .play-header.p2 h2{
+        color: black;
+        }
+    }
 }
