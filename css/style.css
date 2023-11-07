@@ -248,3 +248,27 @@ h3 {
 .more-space {
     padding-bottom: 150px;
 }
+
+@media screen and (max-width:800px) {
+    .options {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 60px;
+        padding: 80px;
+        text-align: center;
+    }
+
+    .sunshine {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .play-images {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+}
