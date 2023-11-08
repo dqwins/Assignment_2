@@ -140,7 +140,6 @@ main {
     padding: 15px 25px;
     border-radius: 25px;
     display: inline-block;
-    transition: .5s rgb(25, 59, 36);
     text-shadow: 1px 1px 1px black;
     font-size: 30px;
 
@@ -157,7 +156,7 @@ main {
 
 .sunshine {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
     grid-gap: 20px;
 }
 
@@ -185,6 +184,12 @@ main {
     position: relative;
 }
 
+.leth-sunlight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 100px;
+}
+
 /*  TYPOGRAPHY   */
 
 h1 {
@@ -203,6 +208,7 @@ h2 {
     font-size: 55px;
     font-style: normal;
     height: 50px;
+    display: inline;
 }
 
 h3 {
@@ -228,7 +234,7 @@ h3 {
     font-size: 40px;
     font-style: normal;
     height: 50px;
-
+    display: inline-block;
 }
 
 .p4 {
@@ -242,6 +248,20 @@ h3 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: black;
     font-size: 20px;
+}
+
+.p6 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    font-size: 40px;
+    font-style: normal;
+    height: 50px;
+}
+
+.p7 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 10px;
 }
 
 .more-space {
@@ -267,9 +287,13 @@ h3 {
         grid-template-columns: 1fr;
     }
 
-    @media screen and (max-width:600px) {
-        .play-header.p2 h2{
+    .leth-sunlight {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .play-header.p2 h2 {
         color: black;
-        }
     }
 }
